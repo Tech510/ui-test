@@ -1,0 +1,7 @@
+<div class="drop-down">
+    <select #region class="custom-select" placeholder="Regions" (change)="getChoices($event)">
+        <option value="" selected>Select {{ label }}</option>
+        <option [value]="choice.name" *ngFor="let choice of dropDownList">{{ choice.name }}</option>
+    </select>
+
+</div>

@@ -1,0 +1,18 @@
+<div class="main-container">
+  <app-dropdown-list
+  [label]="'Region'"
+  [dropDownList]="regions"
+  (selectedChoiceEvent)="getCountries($event)">
+  </app-dropdown-list>
+
+  <app-dropdown-list
+    *ngIf="countries"
+    [label]="'Country'"
+    [dropDownList]="countries"
+    (selectedChoiceEvent)="getCountryDetails($event)">
+  </app-dropdown-list>
+
+  <app-country-details
+    [selectedCountry]="selectedCountry"
+  ></app-country-details>
+</div>
