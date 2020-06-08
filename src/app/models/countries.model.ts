@@ -3,7 +3,7 @@ export interface Country {
     capital?: string;
     population?: string;
     currencies?: any;
-    flag?: string
+    flag?: string;
 }
 
 export interface CountriesState {

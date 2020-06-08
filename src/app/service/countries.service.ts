@@ -22,7 +22,7 @@ export class CountriesService {
           currencies: country.currencies,
           flag: country.flag
         })))
-      )
+      );
   }
 
 }

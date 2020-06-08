@@ -22,4 +22,15 @@ describe('DropdownListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should emit an event get choices', () => {
+    const spy = spyOn(component.selectedChoiceEvent, 'emit');
+    const event = {
+      target: {
+        value: 'asia'
+      }
+    };
+    component.getChoices(event);
+    expect(spy).toHaveBeenCalledWith('asia');
+  });
 });

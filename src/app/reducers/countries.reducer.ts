@@ -1,10 +1,10 @@
-import { createReducer, on, Action } from "@ngrx/store";
+import { createReducer, on, Action } from '@ngrx/store';
 import { CountriesAction } from '../actions/countries.action';
 import { CountriesState } from '../models/countries.model';
 
-const initialState: CountriesState = {
+export const initialState: CountriesState = {
     countries: null
-}
+};
 
 const countriesReducer = createReducer(
     initialState,

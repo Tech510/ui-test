@@ -6,8 +6,6 @@ export const CountriesAction = createAction(
     props<CountriesState>()
 );
 
-
-
 export const GetCountriesAction = createAction(
     'GetCountries',
     props<{region: string}>()
